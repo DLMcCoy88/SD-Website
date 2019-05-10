@@ -11,7 +11,7 @@
 		<div class = "row">
 		<ul class = "main-nav">
 			<li><a href="layout.php"> LAYOUT </a></li>
-			<li><a href="home.php"> ABOUT </a></li>
+			<li><a href="about.php"> ABOUT </a></li>
 			<li><a href="readings.php"> READINGS </a></li>
 			<li class ="active"><a href="employee info.php"> EMPOYEE INFO </a></li>
 
