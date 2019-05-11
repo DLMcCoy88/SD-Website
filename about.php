@@ -23,7 +23,8 @@
 	</header>
 	<div class = "Home"> About </div>													<!-- Labels the page. Identifies which tab the user 																					is currently in -->
 
-	<img src="Prototype.jpg">																<!-- Inserts an image -->
+	<img src="Prototype.jpg">
+	<img src="IMG_0672.jpg">																<!-- Inserts an image -->
 
 	<div class = "Question"> WHO?</div>													<!-- Basic information about the system-->
 	<div class = "Answer"> This system was developed by University of Maryland Eastern Shore seniors David Goslee, Dedrick McCoy and Israel Akinsoyinu. </div>
