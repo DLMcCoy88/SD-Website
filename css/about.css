@@ -47,6 +47,8 @@ body
 #system 
 {																		/* Describes the shape and dimensions of the picture */
 	transform: rotate(270deg);
+	width: 1000px;
+	height: 500px;
 }
 
 .Question																/* Describes the size and color of the Question class */
