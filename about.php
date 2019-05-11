@@ -2,7 +2,7 @@
 <html>																					<!-- Starts the html -->
 <head>																					<!-- Starts head of file -->
 	<title>Fire Detection System Hub</title>                                            <!-- Title of webpage -->
-	<link rel="stylesheet" type="text/css" href="css/home.css">                         <!-- Links the webpage to the corresponding 																							cascading style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/about.css">                         <!-- Links the webpage to the corresponding 																							cascading style sheet -->
 
 </head>																					<!-- Closes the head -->
 <body>																					<!-- Starts the body of the webpage -->
@@ -21,10 +21,11 @@
 		</div> 
 
 	</header>
-	<div class = "Home"> About </div>													<!-- Labels the page. Identifies which tab the user 																					is currently in -->
+	<div class = "About"> About </div>													<!-- Labels the page. Identifies which tab the user 																					is currently in -->
 
-	<img src="Prototype.jpg">
-	<img src="IMG_0672.jpg">																<!-- Inserts an image -->
+	<div id = "system"> 
+	<img src="Prototype.jpg">																<!-- Inserts an image -->
+	</div>
 
 	<div class = "Question"> WHO?</div>													<!-- Basic information about the system-->
 	<div class = "Answer"> This system was developed by University of Maryland Eastern Shore seniors David Goslee, Dedrick McCoy and Israel Akinsoyinu. </div>
