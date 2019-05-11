@@ -47,10 +47,8 @@ body
 #system 
 {																		/* Describes the shape and dimensions of the picture */
 	transform: rotate(270deg);
-	margin: auto;
-  	width: 50%;
-  	border: 3px solid green;
-  	padding: 10px;
+	height: 250px;
+	width: 500px;
 }
 
 .Question																/* Describes the size and color of the Question class */
