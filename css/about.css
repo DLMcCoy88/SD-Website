@@ -1,0 +1,70 @@
+#title
+{
+	color: silver;														/* Identifies the color and the font of the title. 
+																		"#" specifies that the title is an ID */
+	font-size: 60px;
+
+}
+
+
+body
+{	background-color: darkred;											/* Identifies the color of the background */
+}
+
+
+.main-nav																/* "." specifies that the main nav is a class */
+{
+	float: right;														/* "float" gives the location of this list with respect to the screen */
+	list-style: none;
+	margin-top: 30px;													/* Sets the space from the top of the screen to the list */
+}
+.main-nav li
+{
+	display: inline-block;												/* Makes the list horizontal */
+}
+
+.main-nav li a  														/* Characteristics of the main navigation. Color, size, font
+																		and decoration */
+{
+	color: silver;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roberto", sans-serif;
+	font-size: 15px;
+}
+.main-nav li.active a 													/* Creates a solid black box around whichever item in the list
+																		is active */
+{
+	border: 1px solid black;
+}
+
+.main-nav li a:hover 													/* Creates a solid white box around whichever item in the list the
+																	    cursor is hovering over */
+{
+	border: 1px solid white;
+}
+
+#system 
+{																		/* Describes the shape and dimensions of the picture */
+	transform: rotate(270deg);
+}
+
+.Question																/* Describes the size and color of the Question class */
+{
+	color: silver;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.Answer																	/* Describes the size and color of the Answer class */
+{
+	color: silver;
+	font-size: 25px;
+}
+
+.About																	/* Desribes the size and color of the "Home" label */
+{
+	color: silver;
+	font-size: 40px;
+	font-weight: bold;
+}
