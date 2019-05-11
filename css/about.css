@@ -44,13 +44,13 @@ body
 	border: 1px solid white;
 }
 
-#system 
-{																		/* Describes the shape and dimensions of the picture */
-	transform: rotate(270deg);
-	height: 150px;
-	width: 300px;
-	margin-top: 200px;
-	margin-left: 100px;
+#system
+{
+	margin-top: -150px;
+	margin-left: 300px;
+  	width: 50%;
+  	padding: 10px;
+  	transform: rotate(270deg);
 }
 
 .Question																/* Describes the size and color of the Question class */

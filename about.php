@@ -24,7 +24,7 @@
 	<div class = "About"> About </div>													<!-- Labels the page. Identifies which tab the user 																					is currently in -->
 
 	<div id = "system"> 
-	<img src="Prototype.jpg">																<!-- Inserts an image -->
+	<img src="Prototype.jpg" width="500" length = "250">								<!-- Inserts an image -->
 	</div>
 
 	<div class = "Question"> WHO?</div>													<!-- Basic information about the system-->
@@ -38,7 +38,7 @@
 	<div class = "Question"> WHY? </div>
 	<div class = "Answer"> The objective of this system is to have multiple ways to detect a flame and have the ability to alert occupants and responders of exactly where in the building the flame is.  </div>
 	<div class = "Question"> WHEN? </div>
-	<div class = "Answer"> This system was developed, programmed and constructed in 2019 </div>
+	<div class = "Answer"> This system was developed, programmed and constructed in 2019. </div>
 
 </body>
 </html>
