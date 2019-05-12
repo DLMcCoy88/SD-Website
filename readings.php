@@ -26,3 +26,6 @@
 
 </body>
 </html>
+<?php
+echo nl2br (file_get_contents( "Sensor_Data.txt" )); // get the contents, and echo it out.
+?>
