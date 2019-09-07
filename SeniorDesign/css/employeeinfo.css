@@ -1,0 +1,46 @@
+#title
+{
+	color: silver;
+	font-size: 60px;
+
+}
+
+body
+{
+	background-color: darkred;
+}
+
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.main-nav li
+{
+	display: inline-block;
+}
+
+.main-nav li a 
+{
+	color: silver;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roberto", sans-serif;
+	font-size: 15px;
+}
+.main-nav li.active a
+{
+	border: 1px solid black;
+}
+
+.main-nav li a:hover
+{
+	border: 1px solid white;
+}
+.Info
+{
+	color: silver;
+	font-size: 40px;
+	font-weight: bold;
+}
