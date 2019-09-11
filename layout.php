@@ -30,6 +30,10 @@
     <br>
     <input type = "submit" name = "submit" value = "submit">
 </form>
+<img src="Floor1.jpg" width="1000" length = "500">
+<img src="Floor2.jpg" width="1000" length = "500">                
+<img src="Floor3.jpg" width="1000" length = "500">                
+
 
 <?php
 if(isset($_POST['submit']))
@@ -69,6 +73,7 @@ function display(){
     }
 
 }
+
 ?>
 
 </body>
