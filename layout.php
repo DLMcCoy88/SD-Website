@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Fire Detection System Hub</title>
-	<link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type ="text/css" href="css/layout.css">
 
 </head>
 <body>
@@ -30,10 +30,15 @@
     <br>
     <input type = "submit" name = "submit" value = "submit">
 </form>
-<img src="Floor1.jpg" width="1000" length = "500">
-<img src="Floor2.jpg" width="1000" length = "500">                
-<img src="Floor3.jpg" width="1000" length = "500">                
-
+<div class="bg-grid">
+  <img src='Floor1.jpg' width ="1000" length ="500"/>
+</div>
+<div class="bg-grid">
+  <img src='Floor2.jpg' width ="1000" length ="500"/>
+</div>
+<div class="bg-grid">
+  <img src='Floor3.jpg' width ="1000" length ="500"/>
+</div>
 
 <?php
 if(isset($_POST['submit']))
@@ -69,7 +74,7 @@ function display(){
     for ($i=0; $i < $num; $i++){
       $result=mysqli_fetch_array($query);
       $img=$result['image'];
-      echo '<img class ="img" src="data:image;base64, ' .$img.'">'; 
+      echo '<img class ="img" src="data:image;base64, ' .$img.'';
     }
 
 }

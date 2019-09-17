@@ -53,3 +53,29 @@ body
 	height: 500px;
 	width: 1000px;
 }
+.bg-grid {
+  display:inline-table;/*shrink/expand to fit content */
+  position:relative;
+  vertical-align:top;
+}
+.bg-grid img {
+  display:block;
+}
+.bg-grid:before {
+  position:absolute;
+  content:'';
+  background-image: repeating-linear-gradient(0deg,transparent,#CCC 0,transparent 3px,transparent 10%), repeating-linear-gradient(-90deg,transparent,#CCC 0,transparent 3px,transparent 10%);
+  pointer-events:none;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+p {
+  position:relative;
+}
+code {
+  font-size:1.8em;
+  display:block;
+}
