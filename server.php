@@ -7,7 +7,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b3d90593b3f8e4', 'f2f0c673', 'heroku_553bb04cbc1909f');
+$db = mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b9d264b004acd5', '65b3cf3c', 'heroku_553bb04cbc1909f');
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
