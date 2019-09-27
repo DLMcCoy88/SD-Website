@@ -11,7 +11,7 @@
   <div class = "login-page">
   <div class = "form">
   
-  <form method="post" action="layout.php">
+  <form method="post" action="index.php">
     <?php include('errors.php'); ?>
     <div class="input-group">
       <input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>">
