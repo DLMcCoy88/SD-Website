@@ -22,7 +22,7 @@
       <input type = "submit" value = "Login" name = "login_user" /> 
   	</div>
   	<p>
-  		Not yet a member? <a href="reg.php">Sign up</a>
+  		Not yet a member? <a href="index.php">Sign up</a>
   	</p>
     </div>
     </div>
