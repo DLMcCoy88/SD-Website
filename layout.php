@@ -165,13 +165,11 @@ n20.addEventListener("mousedown", initialClick, false);
 
 
 function move(e){
-
   var newX = e.clientX - 10;
   var newY = e.clientY - 10;
 
   image.style.left = newX + "px";
   image.style.top = newY + "px";
-
   
 }
 
@@ -182,7 +180,7 @@ function initialClick(e) {
     moving = !moving;
     return;
   }
-  
+
   moving = !moving;
   image = this;
 
