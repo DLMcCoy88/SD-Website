@@ -23,7 +23,7 @@
 	</header>
 	<div class = "Readings"> Readings </div>
 	
-	echo '<a href=\\"http://www.169.254.239.112/cgi-bin/console.cgi">Click here</a>'
+	<a href=\\"http://www.169.254.239.112/cgi-bin/console.cgi">Sensor Readings</a>
 
 </body>
 </html>
