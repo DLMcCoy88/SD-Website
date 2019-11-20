@@ -23,9 +23,7 @@
 	</header>
 	<div class = "Readings"> Readings </div>
 	
+	echo '<a href=\\"http://www.169.254.239.112/cgi-bin/console.cgi">Click here</a>'
 
 </body>
 </html>
-<?php
-echo nl2br (file_get_contents( "Sensor_Data.txt" )); // get the contents, and echo it out.
-?>
