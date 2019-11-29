@@ -6,7 +6,7 @@ $username = "";
 $email    = "";
 $errors = array(); 
 
-// connect to the database
+// connect to the heroku database mysqli_connect(server, username, password, database)
 $db = mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b9d264b004acd5', '65b3cf3c', 'heroku_553bb04cbc1909f');
 
 // REGISTER USER

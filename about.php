@@ -1,14 +1,14 @@
-<!DOCTYPE html>                                            								<!--Identifies the type of textfile -->
-<html>																					<!-- Starts the html -->
-<head>																					<!-- Starts head of file -->
-	<title>Fire Detection System Hub</title>                                            <!-- Title of webpage -->
-	<link rel="stylesheet" type="text/css" href="css/about.css">                         <!-- Links the webpage to the corresponding 																							cascading style sheet -->
-
-</head>																					<!-- Closes the head -->
-<body>																					<!-- Starts the body of the webpage -->
-	<h1 id="title"> Fire Detection System Hub </h1>										<!-- Title of the current page -->
+<!DOCTYPE html>                                            								
+<html>																					
+<head>																					
+	<title>Fire Detection System Hub</title>                                            
+	<link rel="stylesheet" type="text/css" href="css/about.css">                        
+</head>																					
+<body>																					
+	<h1 id="title"> Fire Detection System Hub </h1>										
 	<header>
-		<div class = "row">																<!--Creates classes for the list of links to 																						different sections of the webpage. Connects each 																					link to the corresponding webpage. "Active" is the 																					page that is currently open-->
+		<div class = "row">	
+		<!--Creates classes for the list of links to different sections of the webpage. Connects each link to the corresponding webpage. "Active" is the page that is currently open-->															
 		<ul class = "main-nav">
 			<li><a href="layout.php"> LAYOUT </a></li>
 			<li class = "active"> <a href="about.php"> ABOUT </a></li>
@@ -21,13 +21,16 @@
 		</div> 
 
 	</header>
-	<div class = "About"> About </div>													<!-- Labels the page. Identifies which tab the user 																					is currently in -->
+	<!-- Labels the page. Identifies which tab the user is currently in -->
+	<div class = "About"> About </div>	
 
+	<!-- Inserts an image -->
 	<div id = "system"> 
-	<img src="Prototype.jpg" width="500" length = "250">								<!-- Inserts an image -->
+	<img src="Prototype.jpg" width="500" length = "250">								
 	</div>
 
-	<div class = "Question"> WHO?</div>													<!-- Basic information about the system-->
+	<!-- Basic information about the system-->
+	<div class = "Question"> WHO?</div>												
 	<div class = "Answer"> This system was developed by University of Maryland Eastern Shore seniors David Goslee, Dedrick McCoy and Israel Akinsoyinu. </div>
 	<div class = "Question"> WHAT? </div>
 	<div class = "Answer"> This is a fire detection system that notifies the building occupants and first responders of where a fire is in the building. </div>

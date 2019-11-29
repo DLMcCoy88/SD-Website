@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1 id="title"> Fire Detection System Hub </h1>
-
+<!--Menu for different pages of the site-->
 	<header>
 		<div class = "row">
 		<ul class = "main-nav">
@@ -24,6 +24,7 @@
 
 	</header>
 	<br>
+<!--HTML prompt for user selecting their layout and entering where each device is-->
 	<div class = "Floor"> Please select and upload your building layout </div>
 <form method = "post" enctype = "multipart/form-data">
     <input type = "file" name = "image">
@@ -35,6 +36,7 @@
     <input type="number" name="num1"/>
     <div><br><input type="submit" value="Enter"></div><br>
 </form>
+<!--Converts num1 so it can be used in php-->
 <?php
 $num1 = 0;
 if (isset($_GET['num1'])) {
@@ -44,7 +46,7 @@ if (isset($_GET['num1'])) {
 }
 
 ?>
-
+<!--Create multiple input fields based on value of num1-->
 <?php
 echo "<form method = 'POST' action = 'layout.php?num1=$num1'>";
 $rooms = array();
@@ -57,6 +59,7 @@ for ($i=1; $i<=$num1; $i++) {
 echo "<input type = 'submit' value = 'SEND'/>";
 echo "</form>";
 ?>
+<!--Function to display each node ID and it's location-->
 <?php
 function location()
 {
@@ -74,6 +77,7 @@ if(isset($_POST['room']))
 }
 
 ?>
+<!--Checking if file type is an image and saves to "images" table in database-->
 <?php
 if(isset($_POST['submit']))
 {
@@ -86,7 +90,7 @@ if(isset($_POST['submit']))
       saveimage($name,$image);
   }
 }
-
+//Function to connect to database: mysqli_connect(server, username, password, database)
 function saveimage($name, $image){
     $con = mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b9d264b004acd5', '65b3cf3c', 'heroku_553bb04cbc1909f');
     $sql="insert into images(name, image) values('$name', '$image')";
@@ -99,7 +103,7 @@ function saveimage($name, $image){
     }
 }
 display();
-
+//Function to display all images in the table
 function display(){
     $con = mysqli_connect('us-cdbr-iron-east-02.cleardb.net', 'b9d264b004acd5', '65b3cf3c', 'heroku_553bb04cbc1909f');
     $sql = "select * from images";
@@ -114,6 +118,7 @@ function display(){
 }
 
 ?>
+<!--Set variables from php to new variables in javascript-->
 <script type="text/javascript">
 var n1 = document.getElementById("node1");
 var n2 = document.getElementById("node2");
@@ -136,7 +141,7 @@ var n18 = document.getElementById("node18");
 var n19 = document.getElementById("node19");
 var n20 = document.getElementById("node20");
 
-
+//Selecting the icons when clicked on, moving the icon as the cursor is moving and placing the icon when the mouse is clicked again
 var moving = false;
 
 n1.addEventListener("mousedown", initialClick, false);

@@ -1,14 +1,40 @@
 #title
 {
-	color: silver;														/* Identifies the color and the font of the title. 
-																		"#" specifies that the title is an ID */
-	font-size: 60px;
-
+	color: silver;
+  	position: relative;
+  	font-family: sans-serif;
+  	text-transform: uppercase;
+  	font-size: 2em;
+  	letter-spacing: 4px;
+  	overflow: hidden;
+ 	background: linear-gradient(90deg, #000, #fff, #000);
+  	background-repeat: no-repeat;
+  	background-size: 80%;
+  	animation: animate 3s linear infinite;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
 
 body
-{	background-color: darkred;											/* Identifies the color of the background */
+{
+  background: darkred;
+  font-family: "Lora", serif;
+  font-size: 1.0rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.0;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -50,19 +76,6 @@ body
   	width: 50%;
   	padding: 10px;
   	transform: rotate(270deg);
-}
-
-.Question																/* Describes the size and color of the Question class */
-{
-	color: silver;
-	font-size: 40px;
-	font-weight: bold;
-}
-
-.Answer																	/* Describes the size and color of the Answer class */
-{
-	color: silver;
-	font-size: 25px;
 }
 
 .About																	/* Desribes the size and color of the "Home" label */
