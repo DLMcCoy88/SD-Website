@@ -3,6 +3,49 @@
 <head>
 	<title>Fire Detection System Hub</title>
   <link rel="stylesheet" type ="text/css" href="css/layout.css">
+  <style>
+  @-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.objblink {
+-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-timing-function: ease-in-out;
+    
+-moz-animation-direction: normal;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: blink;
+    -moz-animation-timing-function: ease-in-out;    
+}
+</style>
 
 </head>
 <body>
@@ -47,6 +90,7 @@ if (isset($_GET['num1'])) {
 
 ?>
 <!--Create multiple input fields based on value of num1-->
+<!--$i increments starting at 1. Node.$i. becomes Node1, Node2, Node3...-->
 <?php
 echo "<form method = 'POST' action = 'layout.php?num1=$num1'>";
 $rooms = array();
@@ -59,6 +103,8 @@ for ($i=1; $i<=$num1; $i++) {
 echo "<input type = 'submit' value = 'SEND'/>";
 echo "</form>";
 ?>
+<button onclick="myFunction()" type = "submit">Blink</button><br>
+
 <!--Function to display each node ID and it's location-->
 <?php
 function location()
@@ -68,7 +114,7 @@ function location()
   if (sizeof($rooms) > 0){  
     for($counter = 0; $counter < sizeof($rooms); $counter++)
     {
-      echo "Node #".($counter + 1).": ".$rooms[$counter]."<br />";
+      echo "Node".($counter + 1).": ".$rooms[$counter]."<br />";
     }}
 }
 if(isset($_POST['room']))
@@ -118,8 +164,9 @@ function display(){
 }
 
 ?>
-<!--Set variables from php to new variables in javascript-->
 <script type="text/javascript">
+//Set variables from php to new variables in javascript
+
 var n1 = document.getElementById("node1");
 var n2 = document.getElementById("node2");
 var n3 = document.getElementById("node3");
@@ -166,7 +213,9 @@ n19.addEventListener("mousedown", initialClick, false);
 n20.addEventListener("mousedown", initialClick, false);
 
 
-
+function myFunction(){
+    n1.classList.toggle("objblink");
+}
 
 
 function move(e){
