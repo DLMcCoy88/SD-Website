@@ -220,7 +220,7 @@ function myFunction(){
 
 function move(e){
   var newX = e.clientX - 10;
-  var newY = e.clientY - 10;
+  var newY = e.clientY - 10 + document.body.scrollTop;
 
   image.style.left = newX + "px";
   image.style.top = newY + "px";
