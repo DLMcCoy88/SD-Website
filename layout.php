@@ -103,7 +103,7 @@ for ($i=1; $i<=$num1; $i++) {
 echo "<input type = 'submit' value = 'SEND'/>";
 echo "</form>";
 ?>
-<button onclick="myFunction()" type = "submit">Blink</button><br>
+<a onclick="myFunction();" style="cursor: default; color: darkred;">Blink</a><br>
 
 <!--Function to display each node ID and it's location-->
 <?php
