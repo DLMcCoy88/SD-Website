@@ -223,7 +223,7 @@ function move(e){
   var newY = e.clientY - 10 + document.body.scrollTop;
 
   image.style.left = newX + "px";
-  image.style.top = newY + "px";
+  image.style.top = newY +document.body.scrollTop + "px";
   
 }
 
