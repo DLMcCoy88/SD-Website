@@ -56,8 +56,6 @@
 			<li><a href="layout.php"> LAYOUT </a></li>
 			<li><a href="about.php"> ABOUT </a></li>
 			<li class ="active"><a href="readings.php"> READINGS </a></li>
-			<li><a href="employee info.php"> EMPOYEE INFO </a></li>
-
 
 		</ul> 
 
