@@ -78,9 +78,13 @@ body
   	transform: rotate(270deg);
 }
 
-.About																	/* Desribes the size and color of the "Home" label */
+.About																	/* Desribes the size and color of the "About" label */
 {
 	color: silver;
 	font-size: 40px;
 	font-weight: bold;
+}
+.Info
+{
+	font-size: 25px;
 }

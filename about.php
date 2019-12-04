@@ -26,22 +26,24 @@
 
 	<!-- Inserts an image -->
 	<div id = "system"> 
-	<img src="Prototype.jpg" width="500" length = "250">								
+	<img src="IMG_1077.jpg" width="500" length = "250">								
 	</div>
 
 	<!-- Basic information about the system-->
-	<div class = "Question"> WHO?</div>												
-	<div class = "Answer"> This system was developed by University of Maryland Eastern Shore seniors David Goslee, Dedrick McCoy and Israel Akinsoyinu. </div>
-	<div class = "Question"> WHAT? </div>
-	<div class = "Answer"> This is a fire detection system that notifies the building occupants and first responders of where a fire is in the building. </div>
-	<div class = "Question"> HOW? </div>
-	<div class = "Answer"> Fire is detected by carbon monoxide, temperature and ionization sensors. Occupants are notified via SMS and 911 is dialed, both done using a raspberry pi phone. </div>
-	<div class = "Question"> WHERE? </div>
-	<div class = "Answer"> This detector is intended for larger buildings with multiple floors and rooms. These buildings include, (but not limited to) schools, hospitals and corporate offices. Although it is meant for bigger establishments, this system can also be used for smaller buildings such as homes. </div>
-	<div class = "Question"> WHY? </div>
-	<div class = "Answer"> The objective of this system is to have multiple ways to detect a flame and have the ability to alert occupants and responders of exactly where in the building the flame is.  </div>
-	<div class = "Question"> WHEN? </div>
-	<div class = "Answer"> This system was developed, programmed and constructed in 2019. </div>
+	<div class = "Info"> 
+	WHO?<br>												
+		This system was developed by University of Maryland Eastern Shore seniors David Goslee, Dedrick McCoy and Israel Akinsoyinu.<br> 
+		WHAT?<br> 
+		This is a fire detection system that notifies the building occupants and first responders of where a fire is in the building.<br>
+		HOW?<br> 
+		Fire is detected by carbon monoxide, temperature and ionization sensors. Occupants are notified via SMS and 911 is dialed, both done using a raspberry pi phone.<br> 
+		WHERE?<br> 
+		This detector is intended for larger buildings with multiple floors and rooms. These buildings include, (but not limited to) schools, hospitals and corporate offices. Although it is meant for bigger establishments, this system can also be used for smaller buildings such as homes.<br> 
+		WHY?<br> 
+		The objective of this system is to have multiple ways to detect a flame and have the ability to alert occupants and responders of exactly where in the building the flame is.<br>  
+		WHEN?<br> 
+		This system was developed, programmed and constructed in 2019. 
+	</div>
 
 </body>
 </html>
