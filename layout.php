@@ -103,8 +103,6 @@ for ($i=1; $i<=$num1; $i++) {
 echo "<input type = 'submit' value = 'SEND'/>";
 echo "</form>";
 ?>
-<a onclick="myFunction();" style="cursor: default; color: darkred;">Blink</a><br>
-
 <!--Function to display each node ID and it's location-->
 <?php
 function location()
@@ -123,6 +121,8 @@ if(isset($_POST['room']))
 }
 
 ?>
+<a onclick="myFunction();" style="cursor: default; color: darkred;">Blink</a><br>
+
 <!--Checking if file type is an image and saves to "images" table in database-->
 <?php
 if(isset($_POST['submit']))
