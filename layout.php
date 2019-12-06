@@ -86,6 +86,10 @@ if (isset($_GET['num1'])) {
     $num1 = $_GET['num1'];
  
 }
+A[1] = 0;
+if A[1] == 800 {
+  myFunction();
+}
 
 ?>
 <!--Create multiple input fields based on value of num1-->
